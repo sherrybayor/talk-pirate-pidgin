@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Talk like like a Pirate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="section">
+			<h2> Normal talk</h2>
+	<textarea id="normal">
+		
+	</textarea>
+	<img src="http://www.animatedimages.org/data/media/105/animated-woman-image-0255.gif" alt="muslimah" height="70px">
+
+	<h2> Pirates talk</h2>
+	<textarea id="pirate"></textarea>
+	
+	<img class="image" src="http://www.animatedimages.org/data/media/113/animated-pirate-image-0029.gif" height="70px" alt="animated-pirate-image-0029" />	
+	<h2> Pidgin talk</h2>
+	<textarea id="pidgin"></textarea>
+	<img src="http://www.animatedimages.org/data/media/343/animated-girl-image-0028.gif" alt="ghetto girl" height="70px">
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){   alert("Page has loaded"); });
+	$("#normal").keyup(function(){   var words = $("#normal").val(); 
+		words=words.replace(/hello/gi,"ahoy")
+		words=words.replace(/you/gi,"yer")
+		words=words.replace(/stop/gi,"avast")
+		words=words.replace(/are/gi,"ar")
+		words = words.replace(/(\w+)ev(\w+)\s/g, "$1e'$2 ");
+
+
+		 $("#pirate").val(words); });
+
+	 $("#normal").keyup(function(){   var wordes = $("#normal").val(); 
+		wordes=wordes.replace(/hello/gi,"I hail o")
+		wordes=wordes.replace(/is/gi,"na")
+		wordes=wordes.replace(/mum /gi,"male")
+		wordes=wordes.replace(/dad/gi,"pale")
+		wordes=wordes.replace(/are/gi,"dey")
+		wordes=wordes.replace(/here/gi,"hia")
+		wordes=wordes.replace(/this/gi,"dis")
+		wordes=wordes.replace(/trouble/gi,"gobe")
+		wordes=wordes.replace(/Please/gi,"abeg")
+		wordes=wordes.replace(/what/gi,"wetin")
+		wordes=wordes.replace(/brother/gi,"bros")
+		wordes=wordes.replace(/prostitute/gi,"ashawo")
+		wordes=wordes.replace(/how far/gi,"afa")
+		wordes=wordes.replace(/him/gi,"am")
+		wordes=wordes.replace(/her/gi,"am")
+		wordes=wordes.replace(/answer/gi,"ansa")
+		wordes=wordes.replace(/another/gi,"anoda")
+		wordes=wordes.replace(/gossip/gi,"aproko")
+		wordes=wordes.replace(/you/gi,"una")
+		wordes=wordes.replace(/going/gi,"go")
+		wordes=wordes.replace(/am/gi,"dey")
+
+		$("#pidgin").val(wordes);});
+</script>
+
+</body>
+
+</html>
